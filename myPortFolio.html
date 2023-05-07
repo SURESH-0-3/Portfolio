@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<style>
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+* {
+  border-box: box-sizing;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, #191970, #4b0082);
+  padding: 10px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navbar li {
+  float: right;
+  margin-right: 40px;
+}
+
+#navbar li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  text-decoration: underline;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #6495ed, #8a2be2);
+}
+
+#welcome-section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#welcome-section p {
+  font-size: 24px;
+  margin-bottom: 50px;
+  max-width: 600px;
+  text-align: center;
+}
+
+#projects {
+  padding: 5px;
+  text-align: center;
+  background: linear-gradient(to bottom, #8a2be2, #9400d3);
+}
+button {
+  display: block;
+  margin: 40px auto;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #6495ed;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  color: #6495ed;
+  background-color: #8a2be2;
+}
+button:hover > a {
+  color: #6495ed;
+}
+button > a {
+  text-decoration: none;
+}
+.project-tile {
+  display: inline-block;
+  width: 300px;
+  margin: 10px 10px 0px 10px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.project-tile:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+}
+
+img {
+  object-fit: cover;
+  width: 300px;
+  height: 200px;
+}
+h2 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+.project-tile h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-tile p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#contact {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #9400d3, #4b0082);
+}
+
+#contact h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#contact a {
+  display: block;
+  margin: 30px auto;
+  width: 300px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#contact a:hover {
+  background: #fff;
+  color: #4b0082;
+  text-decoration: none;
+}
+
+footer {
+  background: linear-gradient(to bottom, #4b0082, #191970);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+footer > p > a {
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  #navbar {
+    justify-content: center;
+  }
+  nav > ul {
+    margin: 0 1rem;
+  }
+}
+
+</style>
+<body>
+<nav id="navbar">
+  <ul>
+    <li><a href="#welcome-section">About</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="welcome-section">
+  <h1>Welcome to My Portfolio</h1>
+  <p>Hi, I'm Zakaria, a full-stack web developer with a passion for building creative and user-friendly web applications.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-tile">
+
+    <a href="https://codepen.io/zakariahadjersi/pen/vYzwZbe/"><img src="https://codepen.io/zakariahadjersi/pen/vYzwZbe/image/small.png"></a>
+  </div>
+
+  <div class="project-tile">
+    <a href="https://codepen.io/zakariahadjersi/pen/BaOVzXq"><img src="https://codepen.io/zakariahadjersi/pen/BaOVzXq/image/small.png"></a>
+  </div>
+
+  <div class="project-tile">
+    <a href="https://codepen.io/zakariahadjersi/pen/OJoMmRG/"><img src="https://codepen.io/zakariahadjersi/pen/OJoMmRG/image/small.png"></a>
+
+  </div>
+  <div class="project-tile">
+    <a href="https://codepen.io/zakariahadjersi/pen/ZEjQeOv/"><img src="https://codepen.io/zakariahadjersi/pen/ZEjQeOv/image/small.png"></a>
+  </div>
+  <button><a href="https://codepen.io/zakariahadjersi">Show all</a></button>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>If you have any questions or would like to work with me, please feel free to reach out:</p>
+  <ul>
+    <li><a id="profile-link" href="https://github.com/zakariahadjersi" target="_blank"><i class="fab fa-github"></i> Github</a></li>
+    <li><a href="https://www.freecodecamp.org/fcc896f32ae-38e9-4a41-a8a8-142cbaf52c3e" target="_blank"><i class="fab fa-free-code-camp"></i> FreeCodeCamp</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>Created for <a href="https://freecodecamp.org/">freecodecamp</a></p>
+</footer>
+</body>
+</html>
